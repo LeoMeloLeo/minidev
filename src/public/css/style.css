@@ -35,15 +35,41 @@ html, body{
     width: 100%;
     height: 100%;
     background-color: var(--fundo);
+    overflow: hidden;
 }
 body{
     padding-top: 10px;
+}
+
+#linhas, #txtArea{
+    height: 100%;
+    font-family: "Source Code Pro";
+    font-size: 1.1em;
+    background-color: var(--fundo);
+}
+
+#linhas{
+    width: 8%;
+    /*background-color: var(--amarelo);*/
+    float: left;
 }
 
 /* Sobre */
 #sobre{
     padding-left: 15px;
 }
+
+#txtArea{
+    width: 92%;
+    /*background-color: var(--cinza-claro);*/
+    color: var(--cinza-claro);
+    /*Impedir o edimensionamento do campo de texto txtArea*/
+    resize: none;
+}
+#txtArea:focus{
+    outline: none; /*remove o foco da area de texto*/
+}
+
 #sobre h1,p{
     font-family: "Source Code Pro";
     color: var(--cinza-claro);
